@@ -4,27 +4,23 @@
       <ion-row>
           <ion-col size="12" size-xs>
             <div>
-                <ion-icon name="menu" color="light"></ion-icon>
+              <ion-icon class="top-space" [routerLink]="['/home']" routerLinkActive="router-link-active"  name="ios-arrow-back" color="#cyan"></ion-icon>
             </div>
           </ion-col>
           <ion-col size="12" size-xs>
-            <div>
-                <ion-icon [routerLink]="['/home']" name="ios-arrow-back" color="light"></ion-icon>
-            </div>
           </ion-col>
           <ion-col size="12" size-xs>
             <div>
-              <ion-text [routerLink]="['/home']" color="light">Movies</ion-text>
+              <img class="logo" [routerLink]="['/home']" routerLinkActive="router-link-active"  src="assets/img3.png" alt="WatchMeNow">
+              <!-- <ion-text color="light">WatchMeNow</ion-text> -->
             </div>
           </ion-col>
           <ion-col size="12" size-xs>
-            <div>
-              <ion-icon name="logo-playstation" color="light"></ion-icon>
-            </div>
+           
           </ion-col>
           <ion-col size="12" size-xs>
             <div>
-              <ion-datetime displayFormat="HH:mm" min="1997" max="2019" value="{{ date }}"></ion-datetime>
+              <ion-datetime class="top-space" displayFormat="HH:mm" min="1997" max="2019" value="{{ date }}"></ion-datetime>
             </div>
           </ion-col>
         </ion-row>

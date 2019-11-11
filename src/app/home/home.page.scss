@@ -28,8 +28,10 @@ ion-row {
     padding-top: 0px;
     // background-color: rgb(32, 72, 88);
     background-image: linear-gradient(rgb(32, 72, 88), black);
-    height: 150%;
+    height: 80vh;
+    overflow: auto;
     align-content: center;
+    --background: .content;
 }
 ion-card {
     padding-top: 20px;
@@ -42,6 +44,7 @@ ion-card {
     text-align: center;
     padding: 0%;
     padding-top: 40px;
+
 }
 .image-size {
     height: 275px;
@@ -62,6 +65,5 @@ ion-card {
     height: 305px;
     width: 205px;
     display: inline-block;
-    background-color: rgb(26, 59, 71);
-    //background-image: linear-gradient(rgb(32, 72, 88), black);
+    background-image: linear-gradient(rgb(32, 72, 88), black);
 }

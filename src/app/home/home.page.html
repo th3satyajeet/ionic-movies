@@ -26,10 +26,10 @@
         </ion-row>
       </ion-header>
   </div>
-  
-  <div class="content">
+
+  <ion-content class="content">
     <ion-row>
-        <div class="category">
+        <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/1','New Release']" class="image image-size">
                 <img src="https://image.tmdb.org/t/p/original/iVoZqwvGAwxvGVbYV5y04wpiBob.jpg"  /> 
@@ -39,8 +39,8 @@
           <div>
               NEW RELEASES
           </div>
-        </div>
-        <div class="category">
+        </ion-col>
+        <ion-col class="category">
           <ion-card class="card"> 
               <div [routerLink]="['/2','Most Popular']" class="image image-size">
                 <img src="https://cdn11.bigcommerce.com/s-ujc2jertho/images/stencil/1280x1280/products/12583/11239/Avengers_Endgame__06921.1562707768.jpg?c=2&imbypass=on"/> 
@@ -49,9 +49,9 @@
           <div>
               MOST POPULAR
           </div>
-        </div>
+        </ion-col>
   
-        <div class="category">
+        <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/3','Action']" class="image image-size" >
                 <img src="https://cdn3.movieweb.com/i/movie/HpFU6MXNB3UhU3t3uG8IGkOpdSmeRZ/384:50/The-Terminator.jpg"/> 
@@ -61,8 +61,8 @@
           <div>
               ACTION MOVIES
           </div>
-        </div>
-        <div class="category">
+        </ion-col>
+        <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/4','Comedy']" class="image image-size">
                   <img src="https://stat2.bollywoodhungama.in/wp-content/uploads/2016/03/432977985.jpg"/> 
@@ -72,8 +72,8 @@
           <div>
               COMEDY MOVIES
           </div>
-        </div>
-        <div class="category">
+        </ion-col>
+        <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/5','Horror']" class="image image-size">
                   <img src="https://i.ebayimg.com/images/g/Xc8AAOSw-3FZF1CJ/s-l300.jpg"/> 
@@ -83,8 +83,8 @@
           <div>
               HORROR MOVIES
           </div>
-        </div>
-        <div class="category">
+        </ion-col>
+        <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/6','Animation']" class="image image-size">
                   <img src="https://i.ebayimg.com/images/g/SRQAAOSwbVdbmoOx/s-l300.jpg"/> 
@@ -94,13 +94,9 @@
           <div>
               ANIMATION MOVIES
           </div>
-        </div>
+        </ion-col>
     </ion-row>
-    
-  </div>
-  
-  
-
+  </ion-content>
 </div>
 <div class = "footer">
     <ion-text>Refer to GCB page</ion-text>

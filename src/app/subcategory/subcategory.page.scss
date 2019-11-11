@@ -4,32 +4,47 @@
     padding: 0%;
 }
 .navbar {
-    background-image: linear-gradient(rgb(32, 72, 88), black);
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
-    height: 80px;
+  // background-image: linear-gradient(rgb(32, 72, 88), black);
+  background-color: black;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 204, 255);
+  height: 110px;
+}
+.logo {
+  padding-top: 0px;
+  height: 90px;
+  width: 350px;
 }
 ion-row {
-    padding-top: 20px;
+  padding-top: 10px;
+}
+.top-space {
+  padding-top: 25px;
+  padding-left: 60px;
+  color: rgb(0, 204, 255);
 }
 .content {
-    padding-top: 0px;
-    // background-color: rgb(32, 72, 88);
-    background-image: linear-gradient(rgb(32, 72, 88), black);
-    height: 800%;
-    align-content: center;
+  padding-top: 0px;
+  // background-color: rgb(32, 72, 88);
+  background-image: linear-gradient(rgb(32, 72, 88), black);
+  height: 80vh;
+  overflow: auto;
+  align-content: center;
+  --background: .content;
 }
 ion-card {
     padding-top: 20px;
 }
 .category {
     
-    color: white;
-    font-weight: bold;
-    font-size: 19px;
-    text-align: center;
-    padding: 0%;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+  padding: 0%;
+  padding-top: 40px;
+
 }
 .image-size {
     height: 275px;

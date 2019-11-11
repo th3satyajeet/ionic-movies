@@ -19,6 +19,32 @@ export class MoviedetailsPage implements OnInit {
   favicon: any = 'ios-star-outline';
 
 
+  backButtonOpt = [
+    {
+      id: '/1',
+      category: 'New Release'
+    },
+    {
+      id: '/2',
+      category: 'New Release'
+    },
+    {
+      id: '/3',
+      category: 'New Release'
+    },
+    {
+      id: '/4',
+      category: 'New Release'
+    },
+    {
+      id: '/5',
+      category: 'New Release'
+    },
+    {
+      id: '/6',
+      category: 'New Release'
+    }
+  ];
   ngOnInit() {
     this.dataservice.getData().subscribe(result => this.data = result);
     this.actrouter.params.subscribe(params => {

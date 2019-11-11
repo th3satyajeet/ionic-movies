@@ -1,16 +1,30 @@
 <div class="home-page">
-    <div class="navbar">
+  <div class="navbar">
       <ion-header>
         <ion-row>
             <ion-col size="12" size-xs>
               <div>
-                  <ion-icon name="ios-arrow-back" color="light"></ion-icon>
+                <div *ngFor="let item of data">
+                  <div *ngIf="item && item.title == title">
+                    <ion-icon class="top-space" name="ios-arrow-back" color="#cyan"></ion-icon>
+                  </div>
+                </div>
               </div>
             </ion-col>
-          
-            <ion-col size="12" size-xs class="watch-align">
+            <ion-col size="12" size-xs>
+            </ion-col>
+            <ion-col size="12" size-xs>
               <div>
-                <ion-datetime displayFormat="HH:mm" min="1997" max="2019" value="{{ date }}"></ion-datetime>
+                <img class="logo" [routerLink]="['/home']" routerLinkActive="router-link-active"  src="assets/img3.png" alt="WatchMeNow">
+                <!-- <ion-text color="light">WatchMeNow</ion-text> -->
+              </div>
+            </ion-col>
+            <ion-col size="12" size-xs>
+              
+            </ion-col>
+            <ion-col size="12" size-xs>
+              <div>
+                <ion-datetime class="top-space" displayFormat="HH:mm" min="1997" max="2019" value="{{ date }}"></ion-datetime>
               </div>
             </ion-col>
           </ion-row>
@@ -21,13 +35,13 @@
       <div *ngFor="let item of data">
               <div *ngIf="item && item.title == title">
                 <ion-row>
-                  <ion-col>
+                  <ion-col size="12" size-xs>
                     <div>
                       <img [routerLink]="['/1', item.title, 'movieplayer']" src={{item.img}} class="img-prop"/>
                       <!-- <video src={{item.video}} class="img-prop"></video> -->
                     </div>
                   </ion-col>
-                  <ion-col class="text-prop">
+                  <ion-col class="text-prop" size="12" size-xs> 
                     <ion-row></ion-row>
                     <ion-row></ion-row>
                     <ion-row>{{ item.title }}</ion-row>
