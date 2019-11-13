@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { MoviedataService } from 'src/app/moviedata.service';
 import { StreamingMedia, StreamingVideoOptions, StreamingAudioOptions } from '@ionic-native/streaming-media/ngx';
+import { TimeInterval } from 'rxjs';
 
 @Component({
   selector: 'app-movieplayer',
@@ -17,6 +18,7 @@ export class MovieplayerPage implements OnInit {
   constructor(public http: HttpClient, public dataservice: MoviedataService , public actrouter: ActivatedRoute,
               private streamingMeadia: StreamingMedia ) { }
   title: any;
+  time = 0;
 
 
   ngOnInit() {
@@ -46,5 +48,16 @@ export class MovieplayerPage implements OnInit {
   }
   stopAudio() {
     this.streamingMeadia.stopAudio();
+  }
+  onForward() {
+    this.time = this.time + 10;
+  }
+  onBackward() {
+    if ( this.time >= 10) {
+      this.time = this.time - 10;
+    } else if (this.time < 10) {
+      this.time = 0;
+      console.log(this.time);
+    }
   }
 }

@@ -45,15 +45,14 @@
           </div>
         </ion-col>
       </ion-row>
-
+      
       <ion-row>
         <ion-col class="category" *ngFor="let item of data">
           
-          <div *ngIf="item.year == years && id == 1 || item.rating > 4 && id == 2 || item.category == category">
+          <div *ngIf="item && item.year == years && id == 1 || item.rating > 4 && id == 2 || item.category == category">
             <ion-card class="card" [routerLink]="['/moviedetails', item.title]" routerLinkActive="router-link-active"> 
                 <div class="image image-size">
                     <img src={{item.img}}/>
-                    <p>{{ item.rating }}</p>
                 </div>
             </ion-card>
             <div>
@@ -65,7 +64,6 @@
     
     </ion-content>
   </div>
-  
 </div>
 <div class = "footer">
   <ion-text>Refer to GCB page</ion-text>

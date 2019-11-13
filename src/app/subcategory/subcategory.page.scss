@@ -25,26 +25,23 @@ ion-row {
   color: rgb(0, 204, 255);
 }
 .content {
-  padding-top: 0px;
-  // background-color: rgb(32, 72, 88);
-  background-image: linear-gradient(rgb(32, 72, 88), black);
-  height: 80vh;
-  overflow: auto;
-  align-content: center;
-  --background: .content;
+    padding-top: 0px;
+    // background-color: rgb(32, 72, 88);
+    background-image: linear-gradient(rgb(32, 72, 88), black);
+    height: 80vh;
+    // align-content: center;
 }
 ion-card {
     padding-top: 20px;
 }
 .category {
     
-  color: white;
-  font-weight: bold;
-  font-size: 19px;
-  text-align: center;
-  padding: 0%;
-  padding-top: 40px;
-
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    padding: 0%;
+ 
 }
 .image-size {
     height: 275px;

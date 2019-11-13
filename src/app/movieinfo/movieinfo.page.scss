@@ -19,6 +19,10 @@ ion-row {
     height: 325%;
     align-content: center;
 }
+.info-prop {
+    text-align: center;
+    padding: 0%;
+}
 .content-align {
     padding-left: 200px;
     padding-bottom: 50px;
@@ -60,4 +64,7 @@ ion-card {
     display: inline-block;
     background-color: rgb(26, 59, 71);
     //background-image: linear-gradient(rgb(32, 72, 88), black);
+}
+.watch-align {
+    text-align: right;
 }

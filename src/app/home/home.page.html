@@ -29,6 +29,8 @@
 
   <ion-content class="content">
     <ion-row>
+      <ion-slides>
+        <ion-slide>
         <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/1','New Release']" class="image image-size">
@@ -73,6 +75,8 @@
               COMEDY MOVIES
           </div>
         </ion-col>
+        </ion-slide>
+        <ion-slide>
         <ion-col class="category">
           <ion-card class="card">
               <div [routerLink]="['/5','Horror']" class="image image-size">
@@ -95,6 +99,19 @@
               ANIMATION MOVIES
           </div>
         </ion-col>
+        <ion-col class="category">
+          <ion-card class="card">
+              <div [routerLink]="['/7','Science Fiction']" class="image image-size">
+                  <img src="https://i.pinimg.com/474x/10/34/1f/10341fb2432a703a40a0d807e04e3993.jpg"/> 
+                  
+                </div>
+          </ion-card>
+          <div>
+              SCIENCE FICTION MOVIES
+          </div>
+        </ion-col>
+      </ion-slide>
+      </ion-slides>
     </ion-row>
   </ion-content>
 </div>

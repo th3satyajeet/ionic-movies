@@ -20,17 +20,18 @@
     <div class="category content content-align"> 
       <div *ngFor="let item of data">
         <div *ngIf="item && item.title == title">
-          <div>
-              <ion-row>
-                  {{ item.title }}
-                </ion-row>
-                <ion-row>{{ item.year }} | PG-13 | {{item.duration}} Minutes</ion-row>
-                <ion-row></ion-row>
-                <ion-row>Audio: {{ item.audio }}</ion-row>
-                <ion-row>CC: {{ item.cc }}</ion-row>
-                <ion-row></ion-row>
-                <ion-row>Description: {{ item.description }}</ion-row>
-              </div>
+          <div class="info-prop">
+            <ion-row>
+              {{ item.title }}
+            </ion-row>
+            <ion-row>{{ item.year }} | PG-13 | {{item.duration}} Minutes</ion-row>
+            <ion-row></ion-row>
+            <ion-row>Audio: {{ item.audio }}</ion-row>
+            <ion-row>CC: {{ item.cc }}</ion-row>
+            <ion-row></ion-row>
+            <ion-row>Description: </ion-row>
+            <ion-row>{{ item.description }}</ion-row>
+          </div>
         </div>
       </div>
     </div>

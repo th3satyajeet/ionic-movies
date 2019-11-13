@@ -8,11 +8,12 @@ providedIn: 'root'
 export class MoviedataService {
     fav: any = [];
 
+     public url = 'assets/data/data.json';
 
     constructor(public http: HttpClient ) {}
     getData(): Observable<Moviedata[]> {
-        const url = 'assets/data/data.json';
-        return this.http.get<Moviedata[]>(url);
+        return this.http.get<Moviedata[]>(this.url);
     }
+
 
 }
